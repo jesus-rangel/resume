@@ -18,10 +18,10 @@
    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
 
    <!-- Font Awesome -->
-   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+   <link href="vendor/fontawesome-free/css/all.css" rel="stylesheet">
 
    <!-- Custom styles for this template -->
-   <link href="css/resume.min.css" rel="stylesheet">
+   <link href="css/resume.css" rel="stylesheet">
 
    <!-- Material.io -->
    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
@@ -273,33 +273,209 @@
          <h2 class="mb-5">Habilidades</h2>
 
          <div class="subheading mb-3">Lenguajes de Programación &amp; Herramientas</div>
-         <ul class="list-inline dev-icons">
-            <li class="list-inline-item">
-               <i class="fab fa-html5"></i>
-            </li>
-            <li class="list-inline-item">
-               <i class="fab fa-css3-alt"></i>
-            </li>
-            <li class="list-inline-item">
-               <i class="fab fa-bootstrap"></i>
-            </li>
-            <li class="list-inline-item">
-               <i class="fab fa-sass"></i>
-            </li>
-            <li class="list-inline-item">
-               <i class="fab fa-php"></i>
-            </li>
-            <li class="list-inline-item">
-               <i class="fab fa-js-square"></i>
-            </li>
-            <li class="list-inline-item">
-               <i class="fab fa-laravel"></i>
-            </li>
-            <!--             <li class="list-inline-item">
-               <i class="fab fa-laravel"></i>
-            </li> -->
+         <ul class="list-inline dev-icons" id="accordion">
+            <a href="#html" data-toggle="collapse" data-parent="#accordion">
+               <li class="list-inline-item" data-toggle="tooltip" data-placement="top" title="HTML 5">
+                  <i class="fab fa-html5"></i>
+               </li>
+            </a>
+            <a href="#css3" data-toggle="collapse" data-parent="#accordion">
+               <li class="list-inline-item" data-toggle="tooltip" data-placement="top" title="CSS3">
+                  <i class="fab fa-css3-alt"></i>
+               </li>
+            </a>
+            <a href="#bootstrap" data-toggle="collapse" data-parent="#accordion">
+               <li class="list-inline-item" data-toggle="tooltip" data-placement="top" title="Bootstrap 4">
+                  <i class="fab fa-bootstrap"></i>
+               </li>
+            </a>
+            <a href="#sass" data-toggle="collapse" data-parent="#accordion">
+               <li class="list-inline-item" data-toggle="tooltip" data-placement="top" title="Sass CSS Compiler">
+                  <i class="fab fa-sass"></i>
+               </li>
+            </a>
+            <a href="#javascript" data-toggle="collapse" data-parent="#accordion">
+               <li class="list-inline-item" data-toggle="tooltip" data-placement="top" title="JavaScript">
+                  <i class="fab fa-js-square"></i>
+               </li>
+            </a>
+            <a href="#php" data-toggle="collapse" data-parent="#accordion">
+               <li class="list-inline-item" data-toggle="tooltip" data-placement="top" title="Vanilla PHP">
+                  <i class="fab fa-php"></i>
+               </li>
+            </a>
+            <a href="#laravel" data-toggle="collapse" data-parent="#accordion">
+               <li class="list-inline-item" data-toggle="tooltip" data-placement="top" title="Laravel">
+                  <i class="fab fa-laravel"></i>
+               </li>
+            </a>
+            <a href="#git" data-toggle="collapse" data-parent="#accordion">
+               <li class="list-inline-item" data-toggle="tooltip" data-placement="top" title="Git VCS">
+                  <i class="fab fa-git"></i>
+               </li>
+            </a>
          </ul>
-
+         <div id="html" class="collapse card">
+            <div class="card-header">
+               <button type="button" class="close close-btn">&times;</button>
+               <h5>HTML5</h5>
+            </div>
+            <div class="card-body">
+               <ul>
+                  <li>
+                     HTML5 mezclado con vanilla PHP y variables de Laravel Blade
+                  </li>
+                  <li>
+                     Uso de JSX
+                     mezclando HTML5 con JavaScript a través de React y Vue.js
+                  </li>
+                  <li>
+                     Esfuerzo constante por escribir código elegante y bien comentado para el trabajo en equipo
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <div id="css3" class="collapse card">
+            <div class="card-header">
+               <button type="button" class="close close-btn">&times;</button>
+               <h5>CSS3</h5>
+            </div>
+            <div class="card-body">
+               <ul>
+                  <li>
+                     CSS Avanzado para customizar con facilidad los componentes de Bootstrap
+                  </li>
+                  <li>
+                     Enfoque en darle al cliente una experiencia estética única y fascinante
+                  </li>
+                  <li>
+                     Pronto a comenzar la carrera intensiva de Maquetación Web en <a
+                        href="https://www.educacionit.com/carrera-diseno-web">Educación IT</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <div id="bootstrap" class="collapse card">
+            <div class="card-header">
+               <button type="button" class="close close-btn">&times;</button>
+               <h5>Bootstrap 4 CSS Framework</h5>
+            </div>
+            <div class="card-body">
+               <ul>
+                  <li>
+                     Bootstrap 4 y JQuery
+                  </li>
+                  <li>
+                     Rápido deployment de sitios web sin perder tiempo en minucias del layout
+                  </li>
+                  <li>
+                     Alta calidad en el aspecto estético
+                  </li>
+                  <li>
+                     Responsive Design (Diseño Elástico)
+                  </li>
+                  <li>
+                     Conocimiento profundo de la herramienta permite layout y estética personalizada para cada cliente
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <div id="sass" class="collapse card">
+            <div class="card-header">
+               <button type="button" class="close close-btn">&times;</button>
+               <h5>Sass CSS Compiler</h5>
+            </div>
+            <div class="card-body">
+               <ul>
+                  <li>
+                     Manejo de variables y archivos .scss que evitan el código espagueti y facilitan trabajo en equipo
+                  </li>
+                  <li>
+                     Minificación de archivos css para mayor performance
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <div id="javascript" class="collapse card">
+            <div class="card-header">
+               <button type="button" class="close close-btn">&times;</button>
+               <h5>JavaScript</h5>
+            </div>
+            <div class="card-body">
+               <ul>
+                  <li>
+                     Nivel Avanzado de Vanilla JavaScript, con varios proyectos en la sección <a id="#projectLink"
+                        href="#projects">Proyectos</a>
+                  </li>
+                  <li>
+                     Conocimiento profundo de AJAX
+                  </li>
+                  <li>
+                     Desarrollo de Apps de productividad, rastreador de Bugs y otras utilidades sin ningún framework
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <div id="php" class="collapse card">
+            <div class="card-header">
+               <button type="button" class="close close-btn">&times;</button>
+               <h5>Vanilla PHP</h5>
+            </div>
+            <div class="card-body">
+               <ul>
+                  <li>
+                     PHP Orientado a Objetos
+                  </li>
+                  <li>
+                     Capacidad de armar logins, carritos de compras y otras utilidades sin necesidad de frameworks
+                  </li>
+                  <li>
+                     Entrenamiento en Aseguramiento de datos en el Server-Side
+                  </li>
+                  <li>
+                     Esfuerzo constante por escribir código elegante y bien comentado para el trabajo en equipo
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <div id="laravel" class="collapse card">
+            <div class="card-header">
+               <button type="button" class="close close-btn">&times;</button>
+               <h5>PHP Laravel MVC</h5>
+            </div>
+            <div class="card-body">
+               <ul>
+                  <li>
+                     Uso de Laravel Blade para facilitar la lectura de código
+                  </li>
+                  <li>
+                     Desarrollo de Back-Ends robustos y con alta seguridad de datos
+                  </li>
+                  <li>
+                     Uso de las mejores prácticas en MVC para estructura de carpetas y de variables
+                  </li>
+                  <li>
+                     Esfueo constante por escribir código elegante y bien comentado, facilitando el trabajo en equipo
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <div id="git" class="collapse card">
+            <div class="card-header">
+               <button type="button" class="close close-btn">&times;</button>
+               <h5>Git Version Control</h5>
+            </div>
+            <div class="card-body">
+               <ul>
+                  <li>
+                     Experiencia con Git tanto en equipo como para proyectos personales
+                  </li>
+                  <li>
+                     Uso de Git en línea de comandos y en interfaz gráfica (SourceTree)
+                  </li>
+               </ul>
+            </div>
+         </div>
          <div class="subheading mb-3">Competencias</div>
          <ul class="fa-ul mb-0">
             <li>

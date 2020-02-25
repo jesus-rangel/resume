@@ -25,10 +25,16 @@
       target: '#sideNav'
    });
 
+   //Activate collapser on long paragraphs
    $('.longTxt').collapser({
       mode: 'lines',
       truncate: 3,
       showText: 'Leer Más',
       hideText: 'Ocultar',
    });
+
+   $('.close-btn').click(function () {
+      $('.collapse').collapse('hide');
+   })
+
 })(jQuery); // End of use strict

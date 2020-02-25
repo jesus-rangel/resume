@@ -174,3 +174,8 @@ a {
 a:hover, a:focus, a:active {
   color: #824027;
 }
+
+ul>a, ul>a:focus, ul>a:visited, ul>a>li{
+   text-decoration: none !important;
+   color: #868e96!important;
+}
